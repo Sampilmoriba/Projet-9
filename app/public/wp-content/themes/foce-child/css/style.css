@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.fade-in {
+  animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*Ajouter un effet d'animation continu sur les fleurs*/
+.fleurs-animation ::after {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#studio h2::before {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#studio h2::after {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Ajoutez la classe "visible" pour déclencher l'effet d'apparition */
+.fade-in-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Appliquez les styles initiaux pour l'effet d'apparition */
+.fade-in-title {
+  opacity: 1;
+  transform: translateY(70px);
+}/*# sourceMappingURL=style.css.map */

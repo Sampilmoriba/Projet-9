@@ -1,12 +1,45 @@
-/* Ajoutez la classe "visible" pour déclencher l'effet d'apparition */
-.fade-in-title.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 1.6s ease-out, transform 0.6s ease-out;
-}
 
-/* Appliquez les styles initiaux pour l'effet d'apparition */
-.fade-in-title {
+
+$vitesseTitre: 1s;
+
+.word,
+.word2 {
+    opacity: 0;
+    }
+
+.word,
+.word2 {
+    display:inline-block;
+    position: relative;
     opacity: 1;
-    transform: translateY(70px);
-}
+    }
+
+.word {
+    animation: KframeAnimateTitre1 $vitesseTitre ease-in-out;
+    }
+
+.word2 {
+    animation: KframeAnimateTitre2 $vitesseTitre ease-in-out;
+    }
+
+// Keyframes animation des titres
+@keyframes KframeAnimateTitre1 {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes KframeAnimateTitre2 {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

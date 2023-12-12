@@ -1,8 +1,9 @@
+
 // carrousel swiper pour les personnages
 console.log("le script Swiper est lancé")
 
 document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new swiper ('.swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fade-in {
   animation: fadeIn 1.5s linear;
 }
@@ -211,4 +212,204 @@
 
 .title-left {
   margin-right: 820px;
+}
+
+.story #place {
+  position: relative;
+  background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; /* Empêche les nuages de dépasser lorsqu'ils se déplacent */
+}
+
+#NuagesBleu {
+  max-height: 300px;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0px; /* Position de départ des nuages */
+  height: auto;
+  transition: transform 0.5s ease-out;
+}
+
+.main-navigation {
+  height: 80px;
+}
+
+.main-navigation ul {
+  display: flex;
+}
+
+.main-navigation ul .site-title {
+  display: flex;
+}
+
+.MenuFull {
+  background-color: #FFF5E9;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+}
+.MenuFull.nav_open {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutonMenu {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+.boutonMenu span {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.boutonMenu span::before, .boutonMenu span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.boutonMenu span::after {
+  transform: translateY(10px);
+}
+.boutonMenu span::before {
+  transform: translateY(-10px);
+}
+.boutonMenu.active span {
+  background-color: transparent;
+}
+.boutonMenu.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.boutonMenu.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.menu-items {
+  display: none;
+  background-color: #FFF5E9;
+}
+.menu-items__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 70px;
+}
+
+.liste ul {
+  text-align: center;
+  height: 57%;
+}
+.liste li {
+  text-align: center;
+  list-style-type: none;
+}
+.liste li a {
+  text-decoration: none !important;
+  list-style-type: none !important;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 104px;
+}
+.liste li a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00);
+  -webkit-filter: drop;
+}
+.liste img {
+  margin: auto;
+  display: flex;
+}
+
+.menuParagraphe {
+  margin-left: 80px;
+  text-align: center;
+}
+
+#catMenuBleu,
+#catMenuBlack,
+#catMenuOrange,
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuHibiscus,
+#fleurMenuRandom,
+#fleurMenuFlower {
+  position: absolute;
+}
+
+.logoMenu {
+  width: 200px;
+}
+
+#catMenuBleu {
+  top: 260px;
+  left: 280px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuBlack {
+  top: 480px;
+  right: 210px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuOrange {
+  top: 700px;
+  left: 80px;
+  width: 93px;
+  height: 84px;
+}
+
+#fleurMenuSunFlower {
+  top: 215px;
+  right: 210px;
+}
+
+#fleurMenuOrchid {
+  top: 117px;
+  left: -54px;
+}
+
+#fleurMenuHibiscus {
+  top: 640px;
+  right: -240px;
+  width: 30%;
+}
+
+#fleurMenuRandom {
+  top: 400px;
+  right: -80px;
+  width: 5%;
+}
+
+#fleurMenuFlower {
+  top: 480px;
+  left: 230px;
+  width: 80px;
+  height: 80px;
+}
+
+#catMenuBlack,
+#catMenuOrange,
+#catMenuBleu {
+  animation: flotte 8s infinite alternate;
 }/*# sourceMappingURL=style.css.map */

@@ -181,7 +181,7 @@
     margin-top: -50%;
   }
 }
-.slider-perso {
+.swiper {
   padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -199,19 +199,13 @@
 
 .swiper-slide img {
   display: block;
-  max-width: 400px;
-  width: 400px;
-  height: 400px;
+  max-width: 380px;
 }
 
 #characters {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.title-left {
-  margin-right: 820px;
 }
 
 .story #place {
@@ -412,4 +406,63 @@
 #catMenuOrange,
 #catMenuBleu {
   animation: flotte 8s infinite alternate;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  #catMenuBleu {
+    left: 10%;
+  }
+  #fleurMenuSunFlower {
+    right: 5%;
+  }
+  #catMenuBlack {
+    right: 10%;
+  }
+  #fleurMenuFlower {
+    left: 5%;
+  }
+}
+@media (max-width: 700px) {
+  #catMenuOrange {
+    left: 0;
+  }
+  .main-navigation a {
+    font-size: 14px;
+  }
+  .main-navigation ul {
+    justify-content: flex-start;
+  }
+  .banner {
+    min-height: 100vh;
+  }
+  .banner .backgroundBanner {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #catMenuBleu {
+    display: none;
+  }
+  #catMenuBlack {
+    top: 440px;
+    right: 0;
+  }
+  #fleurMenuFlower {
+    left: 5%;
+  }
+  .liste li a {
+    font-size: 4.5vw;
+  }
+  #fleurMenuSunFlower {
+    display: none;
+  }
+  ul, ol {
+    margin: 0 0 1.5em -4em;
+  }
+  .menuParagraphe {
+    margin-left: -10px;
+  }
 }/*# sourceMappingURL=style.css.map */

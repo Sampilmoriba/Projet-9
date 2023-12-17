@@ -45,10 +45,10 @@
 			    <img id="fleurMenuRandom"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/random_flower.png'; ?>" alt="Petite fleur violette">
 			    <img id="fleurMenuFlower"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/flower.png'; ?>" alt="Petite fleur orange">
 			    <ul class="liste">
-					<li><a href="#story"><span class="Animetitre2">Histoire</span></a></li>
-					<li><a href="#characters"><span class="Animetitre2">Personnages</span></a></li>
-					<li><a href="#place"><span class="Animetitre2">Lieu</span></a></li>
-					<li><a href="#studio"><span class="Animetitre2">Studio Koukaki</span></a></li>
+					<li><a href="#story"><span class="word2">Histoire</span></a></li>
+					<li><a href="#characters"><span class="word2">Personnages</span></a></li>
+					<li><a href="#place"><span class="word2">Lieu</span></a></li>
+					<li><a href="#studio"><span class="word2">Studio Koukaki</span></a></li>
 			    </ul>
 				<p class="menuParagraphe">STUDIO KOUKAKI</p>
 			</div>

@@ -18,7 +18,7 @@ console.log(" le script title-animation-script.js est lancé ")
     });
   });
 
-  const sections = document.querySelectorAll(".Animetitre")
+  const sections = document.querySelectorAll(".word")
     sections.forEach(section => {
     observer.observe(section);
   });
@@ -37,7 +37,7 @@ console.log(" le script title-animation-script.js est lancé ")
     });
   });
 
-  const sections2 = document.querySelectorAll(".Animetitre2")
+  const sections2 = document.querySelectorAll(".word2")
     sections2.forEach(section => {
     observer2.observe(section);  
   });

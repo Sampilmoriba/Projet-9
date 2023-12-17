@@ -20,7 +20,7 @@ if ( get_stylesheet() !== get_template() ) {
 
 // fade-in script
 function custom_fade_in_script() {
-    wp_enqueue_script('custom-fade-in', get_stylesheet_directory_uri() . '/assets/js/custom-fade-in.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/custom-fade-in.js'), true);
+    wp_enqueue_script('custom-fade-in', get_stylesheet_directory_uri() . '/assets/js/fade-in.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/fade-in.js'), true);
 }
 add_action('wp_enqueue_scripts', 'custom_fade_in_script');
 

@@ -16,5 +16,6 @@ coverflowEffect: {
 	depth: 100,
 	modifier: 1,
 	slideShadows: false,
-	},		
+	},	
+
 });

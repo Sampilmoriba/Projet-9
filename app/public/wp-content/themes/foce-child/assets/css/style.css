@@ -197,9 +197,10 @@
 @media (max-width: 700px) {
   #catMenuOrange {
     left: 0;
+    display: none;
   }
   .main-navigation a {
-    font-size: 14px;
+    font-size: 4vw;
   }
   .main-navigation ul {
     justify-content: flex-start;
@@ -221,9 +222,11 @@
   #catMenuBlack {
     top: 440px;
     right: 0;
+    display: none;
   }
   #fleurMenuFlower {
     left: 5%;
+    display: none;
   }
   .liste li a {
     font-size: 4.5vw;
@@ -236,6 +239,9 @@
   }
   .menuParagraphe {
     margin-left: -10px;
+  }
+  #fleurMenuOrchid {
+    display: none;
   }
 }
 .banner img {
@@ -363,7 +369,7 @@
 }
 @media (max-width: 700px) {
   .nomination_text {
-    font-size: 4vw;
+    font-size: 5vw;
     width: 100%;
     max-width: 545px;
     height: 111px;
@@ -394,8 +400,9 @@
   }
   #oscar::after {
     right: -30px;
+    display: none;
   }
-  #oscar::before, #oscar::after {
+  #oscar::before {
     width: 100px;
     height: 100px;
   }
@@ -610,4 +617,10 @@
   right: 0px; /* Position de départ des nuages */
   height: auto;
   transition: transform 0.5s ease-out;
+}
+
+@media (max-width: 700px) {
+  #NuagesBleu {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

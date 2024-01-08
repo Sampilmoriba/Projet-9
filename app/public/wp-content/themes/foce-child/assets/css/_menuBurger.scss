@@ -213,16 +213,18 @@
 	}
 	#fleurMenuFlower {
 		left: 5%
+		
 	}
 }
 
 @media (max-width: 700px) {
 #catMenuOrange {
     left: 0;
+	display: none;
 }
 
 .main-navigation a {
-	font-size: 14px;
+	font-size: 4vw;
 }
 
 .main-navigation ul {
@@ -248,9 +250,12 @@
 #catMenuBlack {
     top: 440px;
     right: 0;
+	display: none;
 }
 #fleurMenuFlower {
-    left: 5%
+    left: 5%;
+	display: none;
+	
 }
 
 .liste li a {
@@ -259,6 +264,7 @@
 
 #fleurMenuSunFlower {
 	display: none;
+	
 }
 ul, ol {
     margin: 0 0 1.5em -4em;
@@ -267,4 +273,8 @@ ul, ol {
 .menuParagraphe {
 	margin-left: -10px;
 }
+#fleurMenuOrchid{
+   display: none;
+  }
+
 }

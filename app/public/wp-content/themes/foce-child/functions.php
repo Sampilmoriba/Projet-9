@@ -19,17 +19,20 @@ if ( get_stylesheet() !== get_template() ) {
 }
 
 // fade-in script
-function custom_fade_in_script() {
+function animation_script() {
     wp_enqueue_script('custom-fade-in', get_stylesheet_directory_uri() . '/assets/js/fade-in.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/fade-in.js'), true);
+    // Animation nuages
+    wp_enqueue_script('nuage', get_stylesheet_directory_uri() . '/assets/js/nuages-animation.js');
+
+    // Animation des titres
+    wp_enqueue_script('Titres-script', get_stylesheet_directory_uri() . '/assets/js/title-animation-script.js', array('jquery'), '1.0.0', true);
+
+    // Gestion du menu Burger
+    wp_enqueue_script('Burger-script', get_stylesheet_directory_uri() . '/assets/js/menu_burger.js', array('jquery'), '1.0.0', true);
+
 }
-add_action('wp_enqueue_scripts', 'custom_fade_in_script');
+add_action('wp_enqueue_scripts', 'animation_script');
 
-
-// Animation nuages
-wp_enqueue_script('nuage', get_stylesheet_directory_uri() . '/assets/js/nuages-animation.js');
-
-// Animation des titres
-wp_enqueue_script('Titres-script', get_stylesheet_directory_uri() . '/assets/js/title-animation-script.js', array('jquery'), '1.0.0', true);
 
 // Ajout librairie Swiper
 function enqueue_swiper_assets() {
@@ -42,5 +45,4 @@ function enqueue_swiper_assets() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
 
-// Gestion du menu Burger
-wp_enqueue_script('Burger-script', get_stylesheet_directory_uri() . '/assets/js/menu_burger.js', array('jquery'), '1.0.0', true);
+    
